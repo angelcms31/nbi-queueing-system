@@ -1,5 +1,4 @@
-require('dotenv').config();
-// Trigger restart
+require('dotenv').config({ path: require('path').resolve(__dirname, '../.env') });// Trigger restart
 const express = require('express');
 const http = require('http');
 const { Server } = require('socket.io');
